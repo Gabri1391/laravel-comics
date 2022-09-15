@@ -22,16 +22,31 @@
     }
    }
    
-   .button{
-    margin: 10px auto;
+   .button-load{
+    margin: 0 auto;
     width: 150px;
     padding: 10px;
     text-align: center;
     font-weight: bold;
     background-color: #0282F9;
+    position: relative;
+    bottom: 20px;
     a{
         color: white;
     }
    }
+
+ }
+
+ .bottom-banner{
+    height: 150px;
+    background-color: #0282F9;
+
+
+    ul{
+        display: flex;
+        justify-content: center;
+        line-height: 150px;
+    }
 
  }

@@ -1,5 +1,6 @@
-@php 
+@php
 $comics = config('comics')
+// $banners = config('bottom_banner')
 @endphp
 
 <!DOCTYPE html>
@@ -20,9 +21,28 @@ $comics = config('comics')
                 </div>
                 @endforeach
             </div>
-            <div class="button">
+            <div class="button-load">
                 <a href="#">LOAD MORE</a>
             </div>
+        </section>
+        <section class="bottom-banner">
+            <ul>
+             <li>
+                <a class="text-white" href="#">COMICS</a>
+             </li>
+             <li>
+                <a class="text-white" href="#">COMICS</a>
+             </li>
+             <li>
+                <a class="text-white"  href="#">COMICS</a>
+             </li>
+             <li>
+                <a class="text-white"  href="#">COMICS</a>
+             </li>
+             <li>
+                <a class="text-white"  href="#">COMICS</a>
+             </li>
+            </ul>
         </section>
     </main>
 </body>

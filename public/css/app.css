@@ -65,14 +65,26 @@ header ul a a.active {
   color: white;
   text-align: center;
 }
-.banner .button {
-  margin: 10px auto;
+.banner .button-load {
+  margin: 0 auto;
   width: 150px;
   padding: 10px;
   text-align: center;
   font-weight: bold;
   background-color: #0282F9;
+  position: relative;
+  bottom: 20px;
 }
-.banner .button a {
+.banner .button-load a {
   color: white;
+}
+
+.bottom-banner {
+  height: 150px;
+  background-color: #0282F9;
+}
+.bottom-banner ul {
+  display: flex;
+  justify-content: center;
+  line-height: 150px;
 }
