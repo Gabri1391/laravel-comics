@@ -2,9 +2,8 @@
 <html lang="en">
 @include('includes.head')
 <body>
-@include('includes.header')
-@include('includes.jumbo')
+    <section class="jumbo">
+      
+    </section>
 </body>
 </html>
-
-
