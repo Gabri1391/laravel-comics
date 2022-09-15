@@ -43,3 +43,25 @@ header ul a a.active {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.banner {
+  background-color: black;
+}
+.banner .card-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.banner .card-box .comics-card {
+  flex-basis: calc(16.6666666667% - 10px);
+  padding: 0 5px;
+}
+.banner .card-box .comics-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.banner .card-box .comics-card figcaption {
+  color: white;
+  text-align: center;
+}
