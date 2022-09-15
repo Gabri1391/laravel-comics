@@ -1,0 +1,33 @@
+header{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        padding-right: 30px;
+    }
+    
+    ul{
+        display: flex;
+        justify-content: center;
+        padding-right: 120px;
+        margin: 10px;
+
+        li{
+           padding: 10px;
+        }
+       
+         a{
+           color: black;
+           font-weight: bold;
+           font-size: 0.8rem;
+           padding: 10px;
+           
+             a.active{
+               border-bottom: 1px solid blue;
+             }
+         }
+     }
+ }
+

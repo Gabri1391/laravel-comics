@@ -1,0 +1,48 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  padding-right: 30px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  padding-right: 120px;
+  margin: 10px;
+}
+
+header ul li {
+  padding: 10px;
+}
+
+header ul a {
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+header ul a a.active {
+  border-bottom: 1px solid blue;
+}
+
