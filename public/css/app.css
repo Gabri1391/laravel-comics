@@ -89,3 +89,57 @@ header ul a a.active {
   justify-content: center;
   line-height: 150px;
 }
+
+.blue-banner {
+  height: 50px;
+  background-color: #0282F9;
+  position: relative;
+}
+.blue-banner img {
+  position: absolute;
+  left: 300px;
+  bottom: 20px;
+  width: 120px;
+}
+
+.card-details {
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 80px;
+  padding-bottom: 100px;
+}
+.card-details .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.card-details .wrapper #price {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  background-color: #55BA59;
+  margin: 5px 0;
+}
+.card-details .wrapper #price p {
+  color: #B0FB93;
+}
+.card-details .wrapper .description {
+  flex-basis: 50%;
+}
+.card-details .wrapper .description h3 {
+  color: #003F5E;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.credit {
+  background-color: #F6F6F6;
+}
+.credit .row {
+  margin-left: 20px;
+}
+.credit span {
+  font-size: 0.8rem;
+}
