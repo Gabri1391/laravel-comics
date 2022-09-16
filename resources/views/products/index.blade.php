@@ -9,12 +9,14 @@ $comics = config('comics')
     <div class="card-box container">
         @foreach ($comics as $comic)
         <div class="comics-card pt-5">
-            <figure>
-                <img src="{{ asset ($comic['thumb']) }}" alt="">
-            </figure>
-            <figcaption>
-            <p>{{ strtoupper($comic['title']) }}</p>
-            </figcaption>
+            <a href="{{ url('/comic')}}">
+                <figure>
+                    <img src="{{ asset ($comic['thumb']) }}" alt="">
+                </figure>
+                <figcaption>
+                <p>{{ strtoupper($comic['title']) }}</p>
+                </figcaption>
+            </a>
         </div>
         @endforeach
     </div>
