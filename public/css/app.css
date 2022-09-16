@@ -9,6 +9,7 @@ ul {
 }
 
 header {
+  height: 8, mm 0px;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;

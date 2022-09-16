@@ -7,7 +7,7 @@
 
 @include('includes.jumbo')
 
-@include('includes.main')
+@yield('content')
 
 </body>
 </html>
