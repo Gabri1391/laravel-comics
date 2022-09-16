@@ -134,21 +134,7 @@ header ul a a.active {
   padding-bottom: 10px;
 }
 
-.credit {
-  background-color: #F6F6F6;
-}
-.credit .row {
-  margin-left: 20px;
-}
-.credit span {
-  font-size: 0.8rem;
-  color: #62B0DE;
-}
-
-.lightblue {
-  color: #62B0DE;
-}
-
-.border-bottom-grey {
-  border-bottom: 1px solid #dedede;
+.talent-specs {
+  height: 500px;
+  background-color: #f6f6f6;
 }

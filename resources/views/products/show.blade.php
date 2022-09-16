@@ -24,50 +24,70 @@
     </div>
 </section>
 
-<section class="credit">
-    <div class=" ms-5 container d-flex">
-        <div class="row d-flex justify-content-between align-items-top mt-3">
-            <div class="col mt-5">
-                <h4>TALENT</h4>
-                <div class="row mt-3 mb-3 d-flex border-bottom-grey align-items-top">
-                    <div class="col">Art By:</div>
-                    <div class="col">
-                        @foreach ($comic['artists'] as $artist)
-                        <span>{{$artist}}</span>@if(!$loop->last), @endif
-                        @endforeach
-                    </div>
-                </div>
-                <div class="row d-flex border-bottom-grey align-items-top">
-                    <div class="col">Written By:</div>
-                    <div class="col">
-                        @foreach ($comic['writers'] as $writer)
-                        <span>{{$writer}}</span>@if(!$loop->last), @endif
-                        @endforeach
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-between  align-items-top  mt-3">
-            <div class="col mt-5">
-                <h4>SPECS</h4>
-                <div class="row mt-3 mb-3 d-flex justify-content-between align-items-top  border-bottom-grey">
-                    <div class="col">Series:</div>
-                    <div class="col lightblue">{{ $comic['series'] }}</div>
-                </div>
-                <div class="row d-flex justify-content-between  align-items-top border-bottom-grey">
-                    <div class="col">U.S. Price:</div>
-                    <div class="col lightblue">{{ $comic['price'] }}</div>
-                </div>
-                <div class="row d-flex justify-content-between align-items-top  border-bottom-grey">
-                    <div class="col">On Sale Date:</div>
-                    <div class="col lightblue">{{ $comic['sale_date'] }}</div>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-</section>
+<section class="talent-specs py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h4 class="border-bottom pb-4">Talent</h4>
+                <div class="row m-0 border-bottom py-2">
 
+                    <div class="col-3">
+                        <span>
+                            Art by:
+                        </span>
+                    </div>
+                    <div class="col-9">
+                        @foreach ($comic['artists'] as $artist)
+                            <span class="text-primary">{{ $artist }},</span>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="row m-0 border-bottom py-2">
+                    <div class="col-3">
+                        <span>
+                            Written by:
+                        </span>
+                    </div>
+                    <div class="col-9">
+                        @foreach ($comic['writers'] as $writer)
+                            <span class="text-primary">{{ $writer }}</span>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 pl-5">
+                <h4 class="border-bottom pb-4">Specs</h4>
+                <div class="row m-0 py-2 border-bottom">
+                    <div class="col-3">
+                        <span>Series:</span>
+                    </div>
+                    <div class="col-9">
+                        <span class="fw-bold text-primary">{{ $comic['series'] }}</span>
+
+                    </div>
+                </div>
+                <div class="row m-0 py-2 border-bottom">
+                    <div class="col-3">
+                        <span>U.S. Price:</span>
+                    </div>
+                    <div class="col-9">
+                        <span class="fw-bold">{{ $comic['price'] }}</span>
+
+                    </div>
+                </div>
+                <div class="row m-0 py-2 border-bottom">
+                    <div class="col-3">
+                        <span>On Sale Date:</span>
+                    </div>
+                    <div class="col-9">
+                        <span class="fw-bold">{{ $comic['sale_date'] }}</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 @endsection
 
