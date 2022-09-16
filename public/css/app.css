@@ -144,3 +144,11 @@ header ul a a.active {
   font-size: 0.8rem;
   color: #62B0DE;
 }
+
+.lightblue {
+  color: #62B0DE;
+}
+
+.border-bottom-grey {
+  border-bottom: 1px solid #dedede;
+}
